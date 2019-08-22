@@ -1,0 +1,31 @@
+<div class="sidebar" data-image="static/assets/img/sidebar-2.jpg" data-color="azure">
+  <div class="sidebar-wrapper">
+    <div class="logo">
+      <a href="http://www.google.com" class="simple-text">
+        <i class="fas fa-truck"></i> TRK Device
+      </a>
+    </div>
+    <ul class="nav">
+      {% if pagina == 'Dashboard  ' %}
+        <li class="nav-item active">
+      {% else %}
+        <li> 
+      {%endif%}
+        <a class="nav-link" href="/">
+          <i class="nc-icon nc-chart-pie-35"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      {% if pagina == 'Usuário  ' %}
+        <li class="nav-item active">
+      {% else %}
+        <li> 
+      {%endif%}
+        <a class="nav-link" href="./usuario.html">
+          <i class="fas fa-list-ul"></i>
+          <p>Lista de veículos</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
