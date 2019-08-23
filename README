@@ -1,0 +1,5 @@
+source bin/activate
+
+pip install -r requirements.txt --user --trusted-host=pypi.python.org --trusted-host=pypi.org --trusted-host=files.pythonhosted.org
+
+flask run
